@@ -1,3 +1,7 @@
+## Posts
+
+[Regression Loss Surfaces & Ridge Regression]({% post_url RegressionLossSurfaces %})
+
 ## Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/levon003/ml-visualized/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
