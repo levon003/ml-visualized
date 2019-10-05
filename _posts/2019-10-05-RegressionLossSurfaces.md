@@ -1,3 +1,9 @@
+---
+layout: post
+mathjax: true
+title:  "Regression Loss Surfaces"
+date:   2019-10-05 12:07:25 +0000
+---
 
 Regression Loss Surfaces
 ===
