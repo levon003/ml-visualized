@@ -2,11 +2,11 @@
 # Produces blog post markdown file from the given ipynb file
 
 git_root_dir=$( git rev-parse --show-toplevel )
-nb_dir="${git_root_dir}/notebook"
+nb_dir="${git_root_dir}/_notebook"
 input_filename="${1}"
 output_filename="$( basename -s .ipynb "${input_filename}" ).md"
 input_filepath="${nb_dir}/${input_filename}"
-output_filepath="${git_root_dir}/posts/${output_filename}"
+output_filepath="${git_root_dir}/_posts/${output_filename}"
 
 echo "Converting '${input_filepath}'."
 jupyter nbconvert "${input_filepath}" --to markdown

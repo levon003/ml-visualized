@@ -1,9 +1,3 @@
----
-layout: post
-mathjax: true
-title:  "Ridge Regression Loss Surfaces"
-date:   2019-10-05
----
 
 Regression Loss Surfaces
 ===
@@ -17,6 +11,8 @@ This implementation of ridge regression uses the weights $w$ given by the normal
 REPORT ON PERFORMANCE AND LAMBDA:
 
 See figure at the bottom of this notebook.  I evaluated $\lambda \in [0, 100]$.  For these specific CV folds, the lowest mean RMSE is 4.64 on the training folds and 4.80 on the validation fold when $\lambda = 0$.  This matches a general expectation that adding $\ell2$ regularization decreases bias with an increase in variance, which is reflected in lower RMSE as $\lambda$ increases and more regularization is added.
+
+$$ x = 5 + y $$
 
 Test \(x\) vs $x$ vs x vs (x)
 
@@ -143,67 +139,8 @@ def get_plot_limits(w0, w1, buffer_pct=1):
 
 
 ```python
-x_min = min(0, w[0,0])
-x_max = max(0, w[0,0])
-buffer = (x_max - x_min) * 1
-x_min -= buffer
-x_max += buffer
-x_min, x_max
+x_min, x_max, y_min, y_max = get_plot_limits(w[0,0], w[1,0])
 ```
-
-
-
-
-    (-5.623070136452778, 11.246140272905556)
-
-
-
-
-```python
-y_min = min(0, w[1,0])
-y_max = max(0, w[1,0])
-buffer = (y_max - y_min) * 1
-y_min -= buffer
-y_max += buffer
-y_min, y_max
-```
-
-
-
-
-    (-0.4689015651372297, 0.23445078256861485)
-
-
-
-
-```python
-# set the range to be a square area
-x_range = x_max - x_min
-y_range = y_max - y_min
-if y_range < x_range:
-    diff = x_range - y_range
-    y_min -= diff / 2
-    y_max += diff / 2
-elif x_range < y_range:
-    diff = y_range - x_range
-    x_min -= diff / 2
-    x_max += diff / 2
-    
-x_range = x_max - x_min
-y_range = y_max - y_min
-np.isclose(x_range, y_range), x_min, x_max, y_min, y_max
-```
-
-
-
-
-    (True,
-     -5.623070136452778,
-     11.246140272905556,
-     -8.551830595963475,
-     8.31737981339486)
-
-
 
 
 ```python
@@ -1107,7 +1044,4 @@ plt.show()
 
 ```
 
-
-```python
-
-```
+This blog post was generated with Jekyll and Github Pages. I used [this blog post](https://cduvallet.github.io/posts/2018/03/ipython-notebooks-jekyll) as a guide.
