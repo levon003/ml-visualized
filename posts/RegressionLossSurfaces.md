@@ -92,7 +92,6 @@ plt.show()
 ```
 
 
-    <IPython.core.display.Javascript object>
 
 
 
@@ -275,7 +274,6 @@ plt.show()
 ```
 
 
-    <IPython.core.display.Javascript object>
 
 
 
@@ -345,7 +343,6 @@ plt.show()
 ```
 
 
-    <IPython.core.display.Javascript object>
 
 
 
@@ -418,7 +415,6 @@ plt.show()
 ```
 
 
-    <IPython.core.display.Javascript object>
 
 
 
@@ -1070,7 +1066,6 @@ plt.show()
 
 
 
-    <IPython.core.display.Javascript object>
 
 
 
@@ -1081,7 +1076,6 @@ plt.show()
 
 
 
-    <IPython.core.display.Javascript object>
 
 
 
@@ -1089,7 +1083,6 @@ plt.show()
 
 
 
-    <IPython.core.display.Javascript object>
 
 
 
@@ -1097,7 +1090,6 @@ plt.show()
 
 
 
-    <IPython.core.display.Javascript object>
 
 
 
