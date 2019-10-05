@@ -1,3 +1,9 @@
+---
+layout: post
+mathjax: true
+title:  "Ridge Regression Loss Surfaces"
+date:   2019-10-05
+---
 
 Regression Loss Surfaces
 ===
