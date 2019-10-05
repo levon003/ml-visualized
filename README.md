@@ -1,6 +1,6 @@
 ## Posts
 
-[Regression Loss Surfaces & Ridge Regression]({% post_url /_posts/2019-10-05-RegressionLossSurfaces %})
+[Regression Loss Surfaces & Ridge Regression]({{ site.baseurl }}{% post_url /_posts/2019-10-05-RegressionLossSurfaces %})
 
 ## Welcome to GitHub Pages
 
