@@ -1,2 +1,3 @@
-*.json  # created by the code in one of the notebooks
+# created by the code in one of the notebooks
+*.json
 
